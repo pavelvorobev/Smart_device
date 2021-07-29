@@ -1,0 +1,23 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin fontMeasure($weight, $size, $lineHeight) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lineHeight;
+}
+
+@mixin before-circle {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: -25%;
+  left: 0;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: $color-main;
+}
