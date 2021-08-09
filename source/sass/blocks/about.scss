@@ -1,0 +1,93 @@
+.about {
+  padding-bottom: 110px;
+
+  @media (max-width: $width-desktop) {
+    padding-bottom: 83px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding-bottom: 65px;
+  }
+}
+
+.about .container {
+  position: relative;
+  padding-left: 240px;
+
+  @media (max-width: $width-tablet) {
+    padding-left: 15px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    width: 117px;
+    height: 317px;
+    background: url("../img/2005.jpg") no-repeat;
+    background-size: contain;
+
+    @media (max-width: $width-desktop) {
+      width: 156px;
+      height: 100%;
+    }
+
+    @media (max-width: $width-tablet) {
+      display: none;
+    }
+  }
+}
+
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: $font-roboto;
+  color: $color-text;
+
+  @include fontMeasure(400, 36px, 51px);
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 24px;
+
+    @include fontMeasure(400, 32px, 45px);
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 19px;
+
+    @include fontMeasure(400, 28px, 39px);
+  }
+}
+
+.about p {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @include fontMeasure(400, 16px, 22px);
+  color: $color-text;
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 53px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 38px;
+
+    @media (max-width: $width-desktop) {
+      margin-bottom: 45px;
+    }
+
+    @media (max-width: $width-tablet) {
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.about__button {
+  width: 180px;
+  height: 45px;
+  border: 1px solid $color-main;
+  color: $color-main;
+
+  @include fontMeasure(700, 14px, 16px);
+}

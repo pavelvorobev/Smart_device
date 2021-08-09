@@ -1,0 +1,22 @@
+.button {
+  padding: 8px 13px;
+  font-family: $font-roboto;
+  color: $color-white;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+
+  @include fontMeasure(400, 14px, 16px);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}

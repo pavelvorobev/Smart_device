@@ -1,9 +1,15 @@
-img {
-  max-width: 100%;
-  height: auto;
+html {
+  box-sizing: border-box;
+  font-family: $font-pt;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
   text-decoration: none;
-  color: $color-black;
 }

@@ -1,0 +1,102 @@
+.features {
+  padding: 112px 0 110px 0;
+
+  @media (max-width: $width-desktop) {
+    padding: 54px 0 59px 0;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 37px 0 60px 0;
+  }
+}
+
+.features ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+  @include reset-list;
+
+  @media (max-width: $width-tablet) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.features li {
+  position: relative;
+  min-height: 299px;
+  padding: 40px 43px;
+  border: 1px solid #ebebeb;
+  background-color: $color-white;
+
+  @media (max-width: $width-desktop) {
+    padding: 24px 21px 12px 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    min-height: 232px;
+    padding: 25px 12px 20px 25px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: $color-main;
+  }
+
+  &:hover {
+    background-color: $color-main;
+
+    svg path {
+      fill: $color-white;
+    }
+
+    h3,
+    p {
+      color: $color-white;
+    }
+  }
+}
+
+.features svg {
+  margin-bottom: 23px;
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 18px;
+  }
+}
+
+.features h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: $color-main;
+  font-family: $font-roboto;
+
+  @include fontMeasure(400, 24px, 34px);
+
+  @media (max-width: $width-desktop) {
+    margin-bottom: 21px;
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-bottom: 16px;
+
+    @include fontMeasure(400, 20px, 28px);
+  }
+}
+
+.features p {
+  margin: 0;
+  color: $color-text;
+
+  @include fontMeasure(400, 16px, 22px);
+}

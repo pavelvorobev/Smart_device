@@ -1,0 +1,73 @@
+.modals {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-black, 0.5);
+}
+
+.modals__call-form {
+  position: fixed;
+  width: 490px;
+  height: 605px;
+  padding: 33px 39px 36px 39px;
+  background-color: $color-main;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color-white;
+}
+
+.modals__call-form h2 {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $font-roboto;
+
+  @include fontMeasure(400, 28px, 39px);
+}
+
+.modals__call-form p {
+  margin-top: 0;
+  margin-bottom: 33px;
+
+  @include fontMeasure(400, 16px, 22px);
+}
+
+.modals__call-form input[type="text"] {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 14px 24px;
+}
+
+.modals__call-form textarea {
+  width: 100%;
+  height: 104px;
+  margin-bottom: 30px;
+  padding: 13px 24px;
+}
+
+.modals__call-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  height: 47px;
+  margin-bottom: 34px;
+  font-family: $font-roboto;
+
+  @include fontMeasure(700, 14px, 16px);
+}
+
+.modals__call-form input[type="checkbox"] + label {
+  width: 386px;
+  padding-left: 48px;
+  color: rgba($color-white, 0.8);
+}
+
+.modals__call-form--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon-close.svg") center no-repeat;
+  border: none;
+  cursor: pointer;
+}

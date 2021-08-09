@@ -1,0 +1,81 @@
+.form input {
+  border: none;
+  background-color: rgba($color-white, 0.1);
+
+  &::placeholder {
+    color: $color-white;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    outline: 1px solid $color-white;
+  }
+}
+
+.form textarea {
+  width: 100%;
+  background-color: rgba($color-white, 0.1);
+  border: none;
+  resize: none;
+
+  &::placeholder {
+    color: $color-white;
+
+    @include fontMeasure(400, 16px, 22px);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    outline: 1px solid $color-white;
+  }
+}
+
+.form input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 34px;
+  display: inline-block;
+  align-items: center;
+  height: 45px;
+  width: 230px;
+
+  @include fontMeasure(400, 14px, 16px);
+  opacity: 0.8;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 17px;
+    height: 16px;
+    border: 1px solid $color-white;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
+
+.form input[type="checkbox"]:checked + label {
+  &::before {
+    background: url("../img/icon-checkbox-arrow.svg") center no-repeat;
+  }
+}

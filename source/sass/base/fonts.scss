@@ -1,19 +1,29 @@
 @font-face {
-  font-family: 'Poppins';
+  font-family: "PT Mono";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-display: swap;
-  src: local('Poppins Medium'),
-    url('../../fonts/poppins-500.woff2') format('woff2'),
-    url('../../fonts/poppins-500.woff') format('woff');
+  src: local("PT Mono Regular"),
+    url("../../fonts/pt-mono-regular.woff2") format("woff2"),
+    url("../../fonts/pt-mono-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto Condensed Regular"),
+    url("../../fonts/roboto-condensed-regular.woff2") format("woff2"),
+    url("../../fonts/roboto-condensed-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Poppins Bold'),
-    url('../../fonts/poppins-700.woff2') format('woff2'),
-    url('../../fonts/poppins-700.woff2') format('woff');
+  src: local("Roboto Condensed Bold"),
+    url("../../fonts/roboto-condensed-bold.woff2") format("woff2"),
+    url("../../fonts/roboto-condensed-bold.woff") format("woff");
 }

@@ -1,0 +1,12 @@
+.features-about__wrapper {
+  background: $color-white url("../img/features-about-bg.jpg") no-repeat;
+  background-size: cover;
+
+  @media (max-width: $width-desktop) {
+    background: $color-white url("../img/features-about-bg-mobile.jpg") right no-repeat;
+  }
+
+  @media (max-width: $width-tablet) {
+    background: $color-white url("../img/features-about-bg-mobile.jpg") top 670px right -115px no-repeat;
+  }
+}

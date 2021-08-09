@@ -1,0 +1,164 @@
+.catalog {
+  padding-top: 93px;
+  padding-bottom: 127px;
+  background-color: #1b2d37;
+  color: $color-white;
+
+  @media (max-width: $width-desktop) {
+    padding-top: 53px;
+    padding-bottom: 78px;
+  }
+}
+
+.catalog p {
+  margin-top: 0;
+  margin-bottom: 47px;
+  font-family: $font-roboto;
+
+  @include fontMeasure(400, 36px, 51px);
+
+  @media (max-width: $width-desktop) {
+    @include fontMeasure(400, 32px, 45px);
+  }
+
+  @media (max-width: $width-tablet) {
+    margin-top: 37px;
+
+    @include fontMeasure(400, 28px, 39px);
+  }
+}
+
+.catalog ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  @include reset-list;
+
+  @media (max-width: $width-desktop) {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+}
+
+.catalog a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog li {
+  width: 370px;
+  min-height: 620px;
+  padding: 53px 44px;
+
+  @media (max-width: 1270px) {
+    width: 100%;
+  }
+
+  @media (max-width: $width-desktop) {
+    min-height: 256px;
+    padding: 43px 44px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 23px 35px;
+  }
+}
+
+.catalog__item {
+  position: relative;
+
+  &--production {
+    background: url("../img/catalog-production.jpg") center / cover no-repeat;
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url("../img/catalog-production@2x.jpg") center / cover no-repeat;
+    }
+
+    @media (max-width: $width-desktop) {
+      background: url("../img/catalog-production-tablet.jpg") center / cover no-repeat;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background: url("../img/catalog-production-tablet@2x.jpg") center / cover no-repeat;
+      }
+    }
+
+    @media (max-width: $width-tablet) {
+      background: url("../img/catalog-production-mobile.jpg") center / cover no-repeat;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background: url("../img/catalog-production-mobile@2x.jpg") center / cover no-repeat;
+      }
+    }
+  }
+
+  &--mounting {
+    background: url("../img/catalog-mounting.jpg") center / cover no-repeat;
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url("../img/catalog-mounting@2x.jpg") center / cover no-repeat;
+    }
+
+    @media (max-width: $width-desktop) {
+      background: url("../img/catalog-mounting-tablet.jpg") center / cover no-repeat;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background: url("../img/catalog-mounting-tablet@2x.jpg") center / cover no-repeat;
+      }
+    }
+
+    @media (max-width: $width-tablet) {
+      background: url("../img/catalog-mounting-mobile.jpg") center / cover no-repeat;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background: url("../img/catalog-mounting-mobile@2x.jpg") center / cover no-repeat;
+      }
+    }
+  }
+
+  &--accessories {
+    background: url("../img/catalog-accessories.jpg") center / cover no-repeat;
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url("../img/catalog-accessories@2x.jpg") center / cover no-repeat;
+    }
+
+    @media (max-width: $width-desktop) {
+      background: url("../img/catalog-accessories-tablet.jpg") center / cover no-repeat;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background: url("../img/catalog-accessories-tablet@2x.jpg") center / cover no-repeat;
+      }
+    }
+
+    @media (max-width: $width-tablet) {
+      background: url("../img/catalog-accessories-mobile.jpg") center / cover no-repeat;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background: url("../img/catalog-accessories-mobile@2x.jpg") center / cover no-repeat;
+      }
+    }
+  }
+}
+
+.catalog h3 {
+  max-width: 183px;
+  margin: 0;
+  color: $color-white;
+  font-family: $font-roboto;
+
+  @include fontMeasure(400, 20px, 30px);
+}
+
+.catalog__marker {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 63px;
+  background-color: $color-main;
+}
