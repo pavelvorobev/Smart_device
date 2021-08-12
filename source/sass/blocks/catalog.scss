@@ -45,12 +45,12 @@
   display: block;
   width: 100%;
   height: 100%;
+  padding: 53px 44px;
 }
 
 .catalog li {
   width: 370px;
   min-height: 620px;
-  padding: 53px 44px;
 
   @media (max-width: 1270px) {
     width: 100%;
@@ -68,78 +68,16 @@
 
 .catalog__item {
   position: relative;
+  z-index: 2;
+}
 
-  &--production {
-    background: url("../img/catalog-production.jpg") center / cover no-repeat;
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url("../img/catalog-production@2x.jpg") center / cover no-repeat;
-    }
-
-    @media (max-width: $width-desktop) {
-      background: url("../img/catalog-production-tablet.jpg") center / cover no-repeat;
-
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url("../img/catalog-production-tablet@2x.jpg") center / cover no-repeat;
-      }
-    }
-
-    @media (max-width: $width-tablet) {
-      background: url("../img/catalog-production-mobile.jpg") center / cover no-repeat;
-
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url("../img/catalog-production-mobile@2x.jpg") center / cover no-repeat;
-      }
-    }
-  }
-
-  &--mounting {
-    background: url("../img/catalog-mounting.jpg") center / cover no-repeat;
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url("../img/catalog-mounting@2x.jpg") center / cover no-repeat;
-    }
-
-    @media (max-width: $width-desktop) {
-      background: url("../img/catalog-mounting-tablet.jpg") center / cover no-repeat;
-
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url("../img/catalog-mounting-tablet@2x.jpg") center / cover no-repeat;
-      }
-    }
-
-    @media (max-width: $width-tablet) {
-      background: url("../img/catalog-mounting-mobile.jpg") center / cover no-repeat;
-
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url("../img/catalog-mounting-mobile@2x.jpg") center / cover no-repeat;
-      }
-    }
-  }
-
-  &--accessories {
-    background: url("../img/catalog-accessories.jpg") center / cover no-repeat;
-
-    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url("../img/catalog-accessories@2x.jpg") center / cover no-repeat;
-    }
-
-    @media (max-width: $width-desktop) {
-      background: url("../img/catalog-accessories-tablet.jpg") center / cover no-repeat;
-
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url("../img/catalog-accessories-tablet@2x.jpg") center / cover no-repeat;
-      }
-    }
-
-    @media (max-width: $width-tablet) {
-      background: url("../img/catalog-accessories-mobile.jpg") center / cover no-repeat;
-
-      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url("../img/catalog-accessories-mobile@2x.jpg") center / cover no-repeat;
-      }
-    }
-  }
+.catalog__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .catalog h3 {

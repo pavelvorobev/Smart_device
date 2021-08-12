@@ -68,6 +68,7 @@
 
   @media (max-width: $width-desktop) {
     display: inline-block;
+    vertical-align: baseline;
     margin: 0;
     color: rgba(#1b2d37, 0.5);
 
@@ -144,6 +145,7 @@
 .footer__contacts.opened button {
   @media (max-width: $width-tablet) {
     display: inline-block;
+    vertical-align: baseline;
     width: 16px;
     height: 16px;
     border: none;
@@ -181,6 +183,7 @@
 
 .footer__contents h2 {
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 0;
   margin-bottom: 29px;
   font-family: $font-roboto;
@@ -247,6 +250,7 @@
 
 .footer__contacts h2 {
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 0;
   margin-bottom: 29px;
   font-family: $font-roboto;
@@ -342,6 +346,7 @@
 .footer__copyright p,
 .footer__copyright a {
   display: inline-block;
+  vertical-align: baseline;
   margin-top: 0;
   margin-bottom: 0;
   padding: 14px 0;

@@ -8,6 +8,18 @@
 }
 
 .info__link {
+  @media (max-width: $width-desktop) {
+    &--email svg {
+      width: 25px;
+      height: 19px;
+    }
+
+    &--phone svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   &:hover {
     opacity: 0.8;
   }

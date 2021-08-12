@@ -181,7 +181,9 @@
     width: 287px;
     margin: 0;
   }
+}
 
+.header__button-text {
   &--desktop {
     @media (max-width: $width-tablet) {
       display: none;
@@ -199,6 +201,7 @@
 
 .header__scroll-link {
   display: inline-block;
+  vertical-align: baseline;
   margin: 150px 0 0 -47px;
   transform: rotate(-90deg);
   color: rgba($color-white, 0.5);

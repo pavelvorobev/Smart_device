@@ -48,6 +48,7 @@
   position: relative;
   padding-left: 34px;
   display: inline-block;
+  vertical-align: baseline;
   align-items: center;
   height: 45px;
   width: 230px;
@@ -78,4 +79,8 @@
   &::before {
     background: url("../img/icon-checkbox-arrow.svg") center no-repeat;
   }
+}
+
+.form input[type="checkbox"] {
+  margin-top: 14px;
 }
