@@ -1,29 +1,35 @@
 .header {
-  min-height: 878px;
-  padding: 33px 0 70px 0;
-  background: #1b2d37 url("../img/main-bg.jpg") center center / cover no-repeat;
+  padding: 37px 0 110px 0;
+  background: url("../img/main-bg-decor-desktop.png") calc(50% + 500px) 135px no-repeat, #1b2d37 url("../img/main-bg-desktop.jpg") center center / cover no-repeat;
   color: $color-white;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background: #1b2d37 url("../img/main-bg@2x.jpg") center center / cover no-repeat;
+    background: url("../img/main-bg-decor-desktop@2x.png") calc(50% + 500px) 135px / 713px no-repeat, #1b2d37 url("../img/main-bg-desktop@2x.jpg") center center / cover no-repeat;
+  }
+
+  @media (max-width: 1920px) {
+    background: url("../img/main-bg-decor-desktop.png") calc(50% + 500px) 135px / 600px no-repeat, #1b2d37 url("../img/main-bg-desktop.jpg") center center / cover no-repeat;
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url("../img/main-bg-decor-desktop@2x.png") calc(50% + 500px) 135px / 600px no-repeat, #1b2d37 url("../img/main-bg-desktop@2x.jpg") center center / cover no-repeat;
+    }
   }
 
   @media (max-width: $width-desktop) {
-    min-height: 770px;
-    padding-top: 26px;
-    background: #1b2d37 url("../img/main-bg-tablet.jpg") center center / cover no-repeat;
+    padding: 26px 0 163px 0;
+    background: url("../img/main-bg-decor-tablet.png") right -198px top -25px no-repeat, #1b2d37 url("../img/main-bg-tablet.jpg") center center / cover no-repeat;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: #1b2d37 url("../img/main-bg-tablet@2x.jpg") center center / cover no-repeat;
+      background: url("../img/main-bg-decor-tablet.png") right -198px top -25px no-repeat, #1b2d37 url("../img/main-bg-tablet.jpg") center center / cover no-repeat;
     }
   }
 
   @media (max-width: $width-tablet) {
-    min-height: 647px;
-    background: url("../img/main-bg-decor-mobile.jpg") right top 15px no-repeat, #1b2d37 url("../img/main-bg-mobile.jpg") center center / cover no-repeat;
+    padding: 17px 0 70px 0;
+    background: url("../img/main-bg-decor-mobile.jpg") right top no-repeat, #1b2d37 url("../img/main-bg-mobile.jpg") center center / cover no-repeat;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url("../img/main-bg-decor-mobile.jpg") right top 15px no-repeat, #1b2d37 url("../img/main-bg-mobile@2x.jpg") center center / cover no-repeat;
+      background: url("../img/main-bg-decor-mobile.jpg") right top no-repeat, #1b2d37 url("../img/main-bg-mobile@2x.jpg") center center / cover no-repeat;
     }
   }
 }
@@ -42,12 +48,11 @@
 .header__info {
   display: grid;
   grid-template-columns: max-content auto max-content;
-  align-items: center;
 }
 
 .header__contacts {
   display: grid;
-  margin-right: 38px;
+  margin-right: 47px;
   grid-template-columns: repeat(4, max-content);
   gap: 10px 88px;
   direction: rtl;
@@ -73,6 +78,7 @@
   }
 
   @media (max-width: $width-tablet) {
+    margin-right: 0;
     gap: 10px 23px;
   }
 }
@@ -80,6 +86,7 @@
 .header__contacts a {
   display: flex;
   align-items: center;
+  padding-bottom: 10px;
   direction: ltr;
   color: $color-white;
 
@@ -88,14 +95,14 @@
 
 .header__description {
   max-width: 790px;
-  margin-top: 231px;
+  margin-top: 223px;
 
   @media (max-width: $width-desktop) {
-    margin-top: 125px;
+    margin-top: 116px;
   }
 
   @media (max-width: $width-tablet) {
-    margin-top: 231px;
+    margin-top: 227px;
   }
 }
 
@@ -109,7 +116,7 @@
 
   @media (max-width: $width-desktop) {
     max-width: 325px;
-    margin: 0 0 52px 88px;
+    margin: 0 0 32px 88px;
 
     @include fontMeasure(700, 60px, 70px);
   }
@@ -139,7 +146,7 @@
   }
 
   @media (max-width: $width-tablet) {
-    margin: 0 0 42px 0;
+    margin: 0 0 39px 0;
 
     @include fontMeasure(400, 16px, 25px);
   }

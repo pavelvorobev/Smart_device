@@ -24,9 +24,14 @@
   });
 
   callButton.addEventListener('click', () => {
+    document.body.style.overflow = 'hidden';
     modals.classList.remove('hidden');
     modals.classList.add('visible');
     modalNameInput.focus();
+
+    modals.addEventListener('transitionend', () => {
+      modalNameInput.focus();
+    });
 
     modals.addEventListener('click', (e) => {
       if (e.target.closest('.modals__call-form') === null) {
@@ -39,6 +44,7 @@
   });
 
   callFormClose.addEventListener('click', () => {
+    document.body.style.overflow = 'visible';
     modals.classList.remove('visible');
     modals.classList.add('hidden');
   });
@@ -53,7 +59,7 @@
             event.preventDefault();
           }
 
-          let matrix = '+7 (___) ___-__-__';
+          let matrix = '+7 (___) _______';
           let i = 0;
           let def = matrix.replace(/\D/g, '');
           let val = input.value.replace(/\D/g, '');
@@ -84,7 +90,6 @@
       });
 
   if (window.innerWidth < 767) {
-
     footerToggles.forEach((item) => {
       item.classList.add('closed');
 

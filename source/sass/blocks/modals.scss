@@ -1,8 +1,14 @@
 .modals {
   position: fixed;
+  z-index: 999;
   width: 100%;
   height: 100%;
   background-color: rgba($color-black, 0.5);
+}
+
+.modals:not(:focus-within) {
+  background-color: rgba($color-black, 0.6);
+  transition: background-color 0.01s;
 }
 
 .modals__call-form {
@@ -15,6 +21,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: $color-white;
+
+  @media (max-width: $width-tablet) {
+    width: 100%;
+    overflow-y: scroll;
+  }
 }
 
 .modals__call-form h2 {
@@ -30,12 +41,6 @@
   margin-bottom: 33px;
 
   @include fontMeasure(400, 16px, 22px);
-}
-
-.modals__call-form input[type="text"] {
-  width: 100%;
-  margin-bottom: 30px;
-  padding: 14px 24px;
 }
 
 .modals__call-form textarea {
@@ -60,3 +65,10 @@
   padding-left: 48px;
   color: rgba($color-white, 0.8);
 }
+
+/* .modals.visible {
+  @media (max-width: $width-tablet) {
+    display: none;
+  }
+}
+ */

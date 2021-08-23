@@ -1,6 +1,6 @@
 .features-about {
-  background: $color-white url("../img/features-about-bg.jpg") no-repeat;
-  background-size: cover;
+  background: $color-white url("../img/features-about-bg.jpg") calc(50% - 130px) calc(50% + 15px) no-repeat;
+
 
   @media (max-width: $width-desktop) {
     background: $color-white url("../img/features-about-bg-mobile.jpg") right no-repeat;

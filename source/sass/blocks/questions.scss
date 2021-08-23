@@ -1,15 +1,10 @@
 .questions {
   min-height: 670px;
   padding-top: 96px;
-  padding-bottom: 113px;
-  background: url("../img/airplane-bg.png") left 23% top no-repeat, url("../img/questions-arrows.png") right no-repeat;
+  padding-bottom: 107px;
+  background: url("../img/airplane-bg.png") calc(50% - 445px) 4px no-repeat, url("../img/questions-arrows.png") calc(50% + 775px) 33px no-repeat;
   background-color: $color-main;
   color: $color-white;
-
-  @media (max-width: 1920px) {
-    background: url("../img/airplane-bg.png") left 15% top / 37vw no-repeat, url("../img/questions-arrows.png") right no-repeat;
-    background-color: $color-main;
-  }
 
   @media (max-width: $width-desktop) {
     min-height: 664px;
@@ -21,13 +16,13 @@
 
   @media (max-width: $width-tablet) {
     min-height: 640px;
-    padding-top: 33px;
+    padding-top: 32px;
     padding-bottom: 41px;
   }
 }
 
 .questions__form {
-  max-width: 581px;
+  max-width: 570px;
   margin-left: auto;
 
   @media (max-width: $width-desktop) {
@@ -35,9 +30,14 @@
   }
 }
 
+.questions__form .form__check-label {
+  padding-left: 34px;
+  width: 230px;
+}
+
 .questions h2 {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
   font-family: $font-roboto;
 
   @include fontMeasure(400, 36px, 51px);
@@ -47,6 +47,8 @@
   }
 
   @media (max-width: $width-tablet) {
+    margin-bottom: 12px;
+
     @include fontMeasure(400, 28px, 39px);
   }
 }
@@ -66,10 +68,10 @@
   }
 }
 
-.questions__form input[type="text"] {
+.questions__form input:not([type="checkbox"]) {
   width: 270px;
   height: 50px;
-  margin-right: 31px;
+  margin-right: 20px;
   margin-bottom: 40px;
   padding: 14px 16px;
 
@@ -77,7 +79,7 @@
     display: block;
     width: 100%;
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   &:nth-of-type(2n) {
@@ -86,19 +88,20 @@
 }
 
 .questions__form textarea {
-  min-height: 154px;
+  height: 154px;
   padding: 13px 16px;
   margin-bottom: 43px;
 
   @media (max-width: $width-tablet) {
-    margin-bottom: 30px;
+    height: 104px;
+    margin-bottom: 28px;
   }
 }
 
 .questions__form button {
   width: 270px;
   height: 45px;
-  margin-right: 38px;
+  margin-right: 29px;
 
   @include fontMeasure(700, 14px, 16px);
 
