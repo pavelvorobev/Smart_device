@@ -11,6 +11,7 @@
   const onEscClose = (e) =>{
     if (e.key === 'Escape' || e.key === 'Esc') {
       e.preventDefault();
+      document.body.style.overflow = 'visible';
       modals.classList.remove('visible');
       modals.classList.add('hidden');
       document.removeEventListener('keydown', onEscClose);
@@ -35,6 +36,7 @@
 
     modals.addEventListener('click', (e) => {
       if (e.target.closest('.modals__call-form') === null) {
+        document.body.style.overflow = 'visible';
         modals.classList.remove('visible');
         modals.classList.add('hidden');
       }
@@ -90,7 +92,6 @@
       });
 
   if (window.innerWidth < 767) {
-
     footerToggles.forEach((item) => {
       item.classList.add('closed');
 
