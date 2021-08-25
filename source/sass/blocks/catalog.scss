@@ -5,8 +5,8 @@
   color: $color-white;
 
   @media (max-width: $width-desktop) {
-    padding-top: 53px;
-    padding-bottom: 78px;
+    padding-top: 50px;
+    padding-bottom: 79px;
   }
 
   @media (max-width: $width-tablet) {
@@ -22,6 +22,9 @@
   @include fontMeasure(400, 36px, 51px);
 
   @media (max-width: $width-desktop) {
+    max-width: 613px;
+    margin-bottom: 49px;
+
     @include fontMeasure(400, 32px, 45px);
   }
 

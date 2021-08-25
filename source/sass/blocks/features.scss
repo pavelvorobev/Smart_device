@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $width-tablet) {
-    padding: 37px 0 50px 0;
+    padding: 37px 0 62px 0;
   }
 }
 
@@ -31,11 +31,11 @@
   background-color: $color-white;
 
   @media (max-width: $width-desktop) {
+    min-height: 232px;
     padding: 24px 21px 12px 24px;
   }
 
   @media (max-width: $width-tablet) {
-    min-height: 232px;
     padding: 25px 15px 20px 25px;
   }
 
@@ -63,13 +63,38 @@
   }
 }
 
+.features .features__item {
+  &--deadlines {
+    @media (max-width: $width-desktop) {
+      min-height: 306px;
+      padding: 24px 24px 12px 24px;
+    }
+
+    @media (max-width: $width-tablet) {
+      min-height: 310px;
+      padding: 25px 15px 20px 25px;
+    }
+  }
+
+  &--suppliers {
+    @media (max-width: $width-desktop) {
+      min-height: 306px;
+      padding: 24px 24px 12px 24px;
+    }
+
+    @media (max-width: $width-tablet) {
+      min-height: 310px;
+      padding: 25px 13px 20px 25px;
+    }
+  }
+}
 
 .features svg {
   margin-bottom: 18px;
   color: #00b2ff;
 
   @media (max-width: $width-desktop) {
-    margin-bottom: 14px;
+    margin-bottom: 3px;
   }
 
   @media (max-width: $width-tablet) {
@@ -86,7 +111,7 @@
   @include fontMeasure(400, 24px, 34px);
 
   @media (max-width: $width-desktop) {
-    margin-bottom: 21px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: $width-tablet) {

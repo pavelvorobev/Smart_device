@@ -1,13 +1,13 @@
 .header {
   padding: 37px 0 110px 0;
-  background: url("../img/main-bg-decor-desktop.png") calc(50% + 500px) 135px no-repeat, #1b2d37 url("../img/main-bg-desktop.jpg") center center / cover no-repeat;
+  background: url("../img/main-bg-decor-desktop.png") calc(50% + 510px) 135px / 713px no-repeat, #1b2d37 url("../img/main-bg-desktop.jpg") center center / cover no-repeat;
   color: $color-white;
 
   @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background: url("../img/main-bg-decor-desktop@2x.png") calc(50% + 500px) 135px / 713px no-repeat, #1b2d37 url("../img/main-bg-desktop@2x.jpg") center center / cover no-repeat;
+    background: url("../img/main-bg-decor-desktop@2x.png") calc(50% + 510px) 135px / 713px no-repeat, #1b2d37 url("../img/main-bg-desktop@2x.jpg") center center / cover no-repeat;
   }
 
-  @media (max-width: 1920px) {
+  @media (max-width: 1919px) {
     background: url("../img/main-bg-decor-desktop.png") calc(50% + 500px) 135px / 600px no-repeat, #1b2d37 url("../img/main-bg-desktop.jpg") center center / cover no-repeat;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -16,11 +16,11 @@
   }
 
   @media (max-width: $width-desktop) {
-    padding: 26px 0 163px 0;
-    background: url("../img/main-bg-decor-tablet.png") right -198px top -25px no-repeat, #1b2d37 url("../img/main-bg-tablet.jpg") center center / cover no-repeat;
+    padding: 21px 0 163px 0;
+    background: url("../img/main-bg-decor-tablet.png") right -198px top -40px no-repeat, #1b2d37 url("../img/main-bg-tablet.jpg") center center / cover no-repeat;
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background: url("../img/main-bg-decor-tablet.png") right -198px top -25px no-repeat, #1b2d37 url("../img/main-bg-tablet.jpg") center center / cover no-repeat;
+      background: url("../img/main-bg-decor-tablet.png") right -198px top -40px no-repeat, #1b2d37 url("../img/main-bg-tablet.jpg") center center / cover no-repeat;
     }
   }
 
@@ -64,7 +64,7 @@
   @media (max-width: $width-desktop) {
     grid-template-columns: repeat(auto-fill, minmax(25px, max-content));
     gap: 10px 33px;
-    margin-right: 13px;
+    margin-right: 0px;
 
     &--email svg {
       width: 25px;
@@ -98,7 +98,7 @@
   margin-top: 223px;
 
   @media (max-width: $width-desktop) {
-    margin-top: 116px;
+    margin-top: 112px;
   }
 
   @media (max-width: $width-tablet) {
@@ -116,7 +116,7 @@
 
   @media (max-width: $width-desktop) {
     max-width: 325px;
-    margin: 0 0 32px 88px;
+    margin: 0 0 30px 65px;
 
     @include fontMeasure(700, 60px, 70px);
   }
@@ -140,7 +140,7 @@
   @media (max-width: $width-desktop) {
     max-width: 356px;
     padding-left: 48px;
-    margin: 0 0 57px 91px;
+    margin: 0 0 54px 66px;
 
     @include fontMeasure(400, 18px, 28px);
   }
@@ -181,7 +181,7 @@
 
   @media (max-width: $width-desktop) {
     width: 379px;
-    margin: 0 0 0 139px;
+    margin: 0 0 0 115px;
   }
 
   @media (max-width: $width-tablet) {

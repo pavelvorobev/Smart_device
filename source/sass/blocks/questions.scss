@@ -1,6 +1,6 @@
 .questions {
   min-height: 670px;
-  padding-top: 96px;
+  padding-top: 92px;
   padding-bottom: 107px;
   background: url("../img/airplane-bg.png") calc(50% - 445px) 4px no-repeat, url("../img/questions-arrows.png") calc(50% + 775px) 33px no-repeat;
   background-color: $color-main;
@@ -8,7 +8,7 @@
 
   @media (max-width: $width-desktop) {
     min-height: 664px;
-    padding-top: 83px;
+    padding-top: 80px;
     padding-bottom: 103px;
     background: none;
     background-color: $color-main;
@@ -26,13 +26,21 @@
   margin-left: auto;
 
   @media (max-width: $width-desktop) {
+    max-width: 590px;
     margin: 0 auto;
   }
 }
 
 .questions__form .form__check-label {
+  top: 3px;
   padding-left: 34px;
   width: 230px;
+
+  @media (max-width: $width-desktop) {
+    top: 3px;
+    padding-left: 34px;
+    width: 230px;
+  }
 }
 
 .questions h2 {
@@ -43,11 +51,13 @@
   @include fontMeasure(400, 36px, 51px);
 
   @media (max-width: $width-desktop) {
+    margin-bottom: 14px;
+
     @include fontMeasure(400, 32px, 45px);
   }
 
   @media (max-width: $width-tablet) {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 
     @include fontMeasure(400, 28px, 39px);
   }
@@ -60,7 +70,7 @@
   @include fontMeasure(400, 16px, 22px);
 
   @media (max-width: $width-desktop) {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 
   @media (max-width: $width-tablet) {
@@ -73,13 +83,18 @@
   height: 50px;
   margin-right: 20px;
   margin-bottom: 40px;
-  padding: 14px 16px;
+  padding: 14px 20px;
+
+  @media (max-width: $width-desktop) {
+    width: 280px;
+  }
 
   @media (max-width: $width-tablet) {
     display: block;
     width: 100%;
     margin-right: 0;
     margin-bottom: 32px;
+    padding: 12px 16px 16px 16px;
   }
 
   &:nth-of-type(2n) {
@@ -92,22 +107,34 @@
   padding: 13px 16px;
   margin-bottom: 43px;
 
+  @media (max-width: $width-desktop) {
+    height: 160px;
+  }
+
   @media (max-width: $width-tablet) {
     height: 104px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
+    padding: 10px 16px;
   }
 }
 
 .questions__form button {
   width: 270px;
   height: 45px;
-  margin-right: 29px;
+  margin-right: 37px;
 
   @include fontMeasure(700, 14px, 16px);
+
+  @media (max-width: $width-desktop) {
+    width: 280px;
+    height: 47px;
+    margin-right: 40px;
+  }
 
   @media (max-width: $width-tablet) {
     display: block;
     width: 290px;
+    margin-right: 0;
     margin-bottom: 30px;
   }
 }
